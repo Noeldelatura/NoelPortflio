@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'item1 item2 item3 item3'
+        'item4 item5 item3 item3'
+        'item6 item7 item8 item9'
+        'item10 item10 item11 item12'
+        'item10 item10 item13 item14'
+        'item10 item10 item15 item16'
+    ;
+    padding: 1em;
+    gap: 1em;
+
+    margin: 1em;
+
+
+
+}
+
+#item1 {
+    grid-area: item1;
+}
+
+#item2 {
+    grid-area: item2;
+}
+
+#item4 {
+    grid-area: item4;
+}
+
+#item5 {
+    grid-area: item5;
+}
+
+#item6 {
+    grid-area: item6;
+}
+
+#item7 {
+    grid-area: item7;
+}
+
+#item8 {
+    grid-area: item8;
+}
+
+#item9 {
+    grid-area: item9;
+}
+
+#item11 {
+    grid-area: item11;
+}
+
+#item12 {
+    grid-area: item12;
+}
+
+#item13 {
+    grid-area: item13;
+}
+
+#item14 {
+    grid-area: item14;
+}
+
+#item15 {
+    grid-area: item15;
+}
+
+#item16 {
+    grid-area: item16;
+}
+
+.container {
+    grid-area: item3;
+    background-color: #020253;
+    padding: 20px 0;
+}
+
+
+h1 {
+    color: #0EE1DA;
+    font: normal normal bold 61px/80px Assistant;
+    font-size: 85px;
+    text-align: center;
+    padding: 100px 0 0;
+}
+
+p {
+    font: normal normal normal 10px/26px Assistant;
+    color: #F9F9F9;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 2em;
+    padding: 0 0 2em;
+}
+
+
+.container2 {
+    grid-area: item10;
+    background-color: #8E097C;
+    padding: 40px 0 20px;
+}
+
+.h1 {
+    color: #FFFFFF;
+    font: normal normal bold 61px/80px Assistant;
+    font-size: 61px;
+}
+
+.contact {
+    font: normal normal bold 23px/24px Heebo;
+    color: #0EE1DA;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    margin: 2em auto;
+    padding: 0 0 10px;
+
+}
+
+
+input[type=text] {
+    top: 1454px;
+    left: 393px;
+    width: 35vw;
+    height: 7vh;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    border: none;
+    border-bottom: 8px solid #0EE1DA;
+}
+
+textarea {
+    top: 1454px;
+    left: 393px;
+    width: 35vw;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    border: none;
+    border-bottom: 8px solid #0EE1DA;
+}
+
+label {
+    padding:10px;
+}
+
+form {
+    margin: 2em;
+    padding: 180px;
+}
+
+
+
+
+#button {
+    top: 1874px;
+    left: 393px;
+    width: 35vw;
+    height: 5vh;
+    font: normal normal bold 30px/33px Heebo;
+    background-color: #0EE1DA;
+    border: none;
+    color: #011560;
+    text-align: center;
+    margin: 30px 0 0 0;
+    justify-content: center;
+    padding: 20px 0 0 0;
+}
+
+
+

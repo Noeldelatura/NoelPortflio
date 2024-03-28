@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noel's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#services">Services</a></li> -->
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hello, I'm <br><span>Noel De la tura</span> <br> and I'm</h1>
+            <p>Website developer</p>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.JPG">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">I will tell you about Me:</h1>
+                <p>Hi! , my name is Noel, 21 years old, mother of 2 children. <br>
+                all my life i have always had a passion for everything <br> related to computers. in the past i studied IT and even
+                experimented <br> with graphic design until I come to the consaption of what I truely is to build websites <br> and
+                today I am a student of full stack developer.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">knowledge</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Web Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                <p> Html, Css, Bootstrap, SASS, JavaScript</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- gallery -->
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="assets/coffeePic.png">
+                <div class="layer">
+                    <h3>coffee project</h3>
+                    <p>coffee time</p>
+                    <a href="coffee/coffee.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/worldPic.png">
+                <div class="layer">
+                    <h3>world Project</h3>
+                    <p>trip in the world</p>
+                    <a href="world/worldLandingPage.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                </div>
+            <div class="work">
+                <img src="assets/drivePic.png">
+                <div class="layer">
+                    <h3>drive Project</h3>
+                    <p>השאירו פרטים</p>
+                    <a href="Landing_page1/blue.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                </div>
+                
+            <div class="work">
+            <img src="assets/purplePic.png">
+                <div class="layer">
+                    <h3>drive project2</h3>
+                    <p>השאירו פרטים</p>
+                    <a href="landing_page2/purple.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                </div>
+            <div class="work">
+                <img src="assets/problemPic.png">
+                <div class="layer">
+                    <h3>advaice Project</h3>
+                    <p>להתייעצות חינם</p>
+                    <a href="landing_page_yellow/yellow.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/here&nowPic.png">
+                <div class="layer">
+                    <h3> here&now Project</h3>
+                    <p>here and now</p>
+                    <a href="Here_and_Now/LandHere&now.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> nellydd1425@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 0538868412</p>
+                <a href="../Noelportpolio.zip.zip" download="../Noelportpolio.zip.zip"" download class="btn btn2">להורדת הפרוייקט</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>All Raights Reseved To © Noel De la tura<i class="fas fa-heart"></i>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
