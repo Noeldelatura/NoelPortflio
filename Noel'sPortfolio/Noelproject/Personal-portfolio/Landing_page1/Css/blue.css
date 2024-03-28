@@ -1,0 +1,103 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Comic Neue', cursive;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .container {
+            background: url(..//Image/blue.png) no-repeat center/cover;
+            height: 95vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            flex-direction: column;
+            margin-bottom: 85px;
+        }
+
+        .container h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            color: #D3E10E;
+            font: normal normal bold 86px/113px Assistant;
+        }
+
+        .container p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        label {
+            color: #011560;
+            font-weight: 400;
+            font-size: 1.2rem;
+            text-align: right;
+            font: normal normal bold 16px/21px Assistant;
+        }
+
+        label[for="name"] {
+            padding-left: 210px;
+        }
+
+        input[id="name"],
+        [id="email"] {
+            border: none;
+            border-bottom: 3px solid #D3E10E;
+        }
+
+        input[id="name"] {
+            margin-left: 30px;
+            padding: 5px 20px;
+        }
+
+        input[id="email"] {
+            margin-left: 30px;
+            padding: 5px 20px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 80px;
+            background-color: #D3E10E;
+            color: #011560;
+            border: none;
+            
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            padding: 10px 20px;
+            color: #000000;
+            background-color: #fff;
+            border-radius: 20px;
+            position: absolute;
+            bottom: 180px;
+        }
+        #name,
+        #email {
+            background: #F6F6F6 0% 0% no-repeat padding-box;
+        }
